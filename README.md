@@ -15,9 +15,12 @@
 
 ## Project Charter & Roadmap
 - See [docs/Charter.md](docs/Charter.md)
-- See [docs/Roadmap.pdf](docs/Roadmap.pdf)
+- See Google Sheet [QuestBoard Ver. 2 Roadmap](https://docs.google.com/document/d/13r8UJB6gG8K76UlDLQhNmE9vtA6pwGNAdo8oMHNQo44/edit?usp=sharing)
 
 ## Contributing
 1. Create a branch for your feature: `feature/xxx`
 2. Edit code or docs
 3. Commit → Pull Request
+
+## Backlog
+ - Google Sheet [QuestBoard Backlog](https://docs.google.com/spreadsheets/d/1YQe3td5W9L21zy25wdWxLoIw9DO5a6k8-JLbcwnRbK8/edit?usp=sharing)
