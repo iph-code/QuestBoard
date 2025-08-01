@@ -3,9 +3,27 @@
   <head>
     <base target="_top">
     <title>QuestBoard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+      // basic client-side setup
+      function navigate(page) {
+        google.script.run
+          .withSuccessHandler(html => {
+            document.getElementById('content').innerHTML = html;
+          })
+          .getPage(page);
+      }
+    </script>
   </head>
   <body>
-    <h1>Welcome to QuestBoard</h1>
-    <p>If you see this, your HTML service is working!</p>
+    <nav>
+      <button onclick="navigate('newGame')">Submit Game</button>
+      <button onclick="navigate('gameList')">Browse Games</button>
+      <button onclick="navigate('calendar')">Calendar</button>
+    </nav>
+    <div id="content">
+      <h1>Welcome to QuestBoard</h1>
+      <p>Use the buttons above to get started.</p>
+    </div>
   </body>
 </html>
