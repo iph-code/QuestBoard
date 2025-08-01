@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <title>Game Calendar</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- you can swap this for any calendar library later -->
+  </head>
+  <body>
+    <h2>Upcoming Games</h2>
+    <div id="calendar"></div>
+
+    <script>
+      // stub: fetch games and render list for now
+      google.script.run
+        .withSuccessHandler(games => {
+          const container = document.getElementById('calendar');
+          games.forEach(g => {
+            const div = document.createElement('div');
+            div.textContent = `${g.datetime} — ${g.title}`;
+            container.appendChild(div);
+          });
+        })
+        .getAllGames();
+    </script>
+  </body>
+</html>
