@@ -3,6 +3,14 @@
  */
 function doGet(e) {
   return HtmlService
-    .createHtmlOutput('Hello, QuestBoard!')
+    .createHtmlOutputFromFile('html/index')
     .setTitle('QuestBoard');
+}
+
+/**
+ * Utility to include HTML files.
+ */
+function include(filename) {
+  return HtmlService.createHtmlOutputFromFile(filename)
+      .getContent();
 }
