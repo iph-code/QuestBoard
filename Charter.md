@@ -1,159 +1,176 @@
 # QuestBoard Charter
 
-## Project Title
+
+## **Project Title**
 
 "QuestBoard"
 
-## Project Purpose
+
+## **Project Purpose**
 
 To create a streamlined, online system for organizing, tracking, and reporting Dungeons & Dragons (D&D) games, including Dungeon Master (DM) scheduling, player character registration, and integrated reporting to support campaign logistics and community engagement.
 
-### Background
+
+### **Background**
 
 Our local D&D club uses Meetup, Discord, and spreadsheets to manage games. This process is error-prone, lacks transparency, and is hard to scale. This project aims to build a centralized web application to streamline game scheduling, sign-ups, and reporting.
 
-## Project Objectives
 
-⦁	Allow Dungeon Masters to register and post games.
+## **Project Objectives**
 
-⦁	Enable players to browse and sign up for games with their characters.
+- Allow Dungeon Masters to register and post games.
 
-⦁	Automatically update Player Form options based on DM submissions.
+- Enable players to browse and sign up for games with their characters.
 
-⦁	Centralize campaign and player data for reports and scheduling.
+- Automatically update Player Form options based on DM submissions.
 
-⦁	Facilitate communication through integration with Discord and Meetup.
+- Centralize campaign and player data for reports and scheduling.
 
-## Scope
+- Facilitate communication through integration with Discord and Meetup.
 
-### In-Scope Functionality
 
-⦁	MVP
+## **Scope**
 
-⦁	User auth (Google login)
 
-⦁	User registration and profile updates
+### **In-Scope Functionality**
 
-⦁	DM game submission form
+*	**MVP**
 
-⦁	Game listing & sign-up system
+    *	User auth (Google login)
 
-⦁	Game calendar view
+    *	User registration and profile updates
 
-⦁	Session summary and DM notes page
+    * DM game submission form
 
-⦁	Character basic stats management, including leveling up
+    * Game listing & sign-up system
 
-⦁	Mobile-responsive design
+    * Game calendar view
 
-⦁	Secure form validation and access control
+    * Session summary and DM notes page
 
-⦁	Tier 2
+    * Character basic stats management, including leveling up
 
-⦁	Faction management
+    * Mobile-responsive design
 
-⦁	Non-game meeting management
+    * Secure form validation and access control
 
-⦁	Pending requests report
+- **Tier 2**
 
-⦁	Magic items management
+  - Faction management
 
-### Out-of-Scope (for now)
+  - Non-game meeting management
 
-⦁	Payment or monetization systems.
+  - Pending requests report
 
-⦁	In-app chat or messaging
+  - Magic items management
 
-⦁	Custom campaign world database
 
-⦁	Advanced Discord bots or full third-party integrations.
+### **Out-of-Scope (for now)**
 
-## Stakeholders
+- Payment or monetization systems.
 
-⦁	DMs (schedule and manage games) (includes Initiates and full DMs)
+- In-app chat or messaging
 
-⦁	Players (sign up for games, read summaries)
+- Custom campaign world database
 
-⦁	Admins (monitor usage, moderate reports) (includes Mods, MPs, and Developer)
+- Advanced Discord bots or full third-party integrations.
 
-⦁	Mods & MPs must approve progress
 
-⦁	Developer (Isaac - lead dev/project manager)
+## **Stakeholders**
 
-## Key Deliverables
+- DMs (schedule and manage games) (includes Initiates and full DMs)
 
-⦁	A working, interactive web app functional on desktops and mobile
+- Players (sign up for games, read summaries)
 
-⦁	A documented and maintainable Apps Script codebase.
+- Admins (monitor usage, moderate reports) (includes Mods, MPs, and Developer)
 
-⦁	Reports and visual tools for DMs.
+  - Mods & MPs must approve progress
 
-⦁	Guidelines or a wiki for DMs and players on how to use the system.
+- Developer (Isaac - lead dev/project manager)
 
-## Assumptions
 
-⦁	TAC will allow for Google-only auth in version 1
+## **Key Deliverables**
 
-⦁	Google Sheets is robust enough to handle TAC operations
+- A working, interactive web app functional on desktops and mobile
 
-## Technical Constraints
+- A documented and maintainable Apps Script codebase.
 
-⦁	Apps Script has a daily email quota limit of 1000 emails/day
+- Reports and visual tools for DMs.
 
-⦁	A Google Sheet has a maximum of 10 million cells, a column limit of 18,278 columns (reaching column ZZZ), and no strict numerical limit on the number of rows itself, but it's indirectly governed by the total cell limit and the number of columns used
+- Guidelines or a wiki for DMs and players on how to use the system.
 
-## Risks
 
-⦁	User adoption (DMs primarily), especially if UI performance is sub-par
+## **Assumptions**
 
-⦁	Data retention policies
+- TAC will allow for Google-only auth in version 1
 
-## Dependency
+- Google Sheets is robust enough to handle TAC operations
 
-⦁	Club provides DM lists (complete)
 
-⦁	Club provides Discord webhooks (complete)
+## **Technical Constraints**
 
-⦁	Club provides Meetup webhooks
+- Apps Script has a daily email quota limit of 1000 emails/day
 
-## Timeline
+- A Google Sheet has a maximum of 10 million cells, a column limit of 18,278 columns (reaching column ZZZ), and no strict numerical limit on the number of rows itself, but it's indirectly governed by the total cell limit and the number of columns used
 
-⦁	Phase 1: Establish user roles, workflows, and state machines
 
-⦁	Sprint 1:
+## **Risks**
 
-⦁	Phase 2: Develop the database structure
+- User adoption (DMs primarily), especially if UI performance is sub-par
 
-⦁	Phase 3: Create the database (Sheets) and test data
+- Data retention policies
 
-⦁	Phase 4: Create web app structure
 
-## Success Criteria
+## **Dependency**
 
-⦁	MVP launched with core features and no critical bugs
+- Club provides DM lists (complete)
 
-⦁	DMs and players are able to use the system with minimal instruction
+- Club provides Discord webhooks (complete)
 
-⦁	Players can sign up for games from a mobile device in under 2 minutes
+- Club provides Meetup webhooks
 
-⦁	All (100%) DMs actively using the submission system
 
-⦁	DM Game Reports posted within one week
+## **Timeline**
 
-⦁	A documented and maintainable Apps Script codebase.
+- **Phase 1:** Establish user roles, workflows, and state machines
 
-⦁	The system is sustainable with minimal maintenance.
+  - **Sprint 1**: 
 
-## Technical Architecture Sketch
+- **Phase 2:** Develop the database structure
+
+- **Phase 3:** Create the database (Sheets) and test data
+
+- **Phase 4:** Create web app structure
+
+
+## **Success Criteria**
+
+- MVP launched with core features and no critical bugs
+
+- DMs and players are able to use the system with minimal instruction
+
+  - Players can sign up for games from a mobile device in under 2 minutes
+
+- All (100%) DMs actively using the submission system
+
+- DM Game Reports posted within one week
+
+- A documented and maintainable Apps Script codebase.
+
+- The system is sustainable with minimal maintenance.
+
+
+## **Technical Architecture Sketch**
 
 Add later, when available.
 
-## Glossary
+
+## **Glossary**
 
 **MVP** stands for **Minimum Viable Product**. It’s the smallest slice of functionality that:
 
-⦁	Delivers real value to users
+- Delivers real value to users
 
-⦁	Lets you get feedback as early as possible
+- Lets you get feedback as early as possible
 
-⦁	Minimizes wasted effort on bells and whistles
+- Minimizes wasted effort on bells and whistles
