@@ -1,0 +1,25 @@
+<form id="newGameForm">
+  <h2>New Game Submission</h2>
+  <label>Title:<br>
+    <input name="title" required>
+  </label><br>
+  <label>Date & Time:<br>
+    <input type="datetime-local" name="datetime" required>
+  </label><br>
+  <label>Description:<br>
+    <textarea name="description" rows="4"></textarea>
+  </label><br>
+  <label>DM Name:<br>
+    <input name="dmName" required>
+  </label><br>
+  <button type="button" onclick="submitNewGame()">Submit</button>
+</form>
+
+<script>
+  function submitNewGame() {
+    const data = Object.fromEntries(new FormData(document.getElementById('newGameForm')));
+    google.script.run
+      .withSuccessHandler(() => alert('Game submitted!'))
+      .submitGame(data);
+  }
+</script>
