@@ -98,9 +98,9 @@ Our local D&D club uses Meetup, Discord, and spreadsheets to manage games. This 
 
 ## Technical Constraints
 
-⦁	Apps Script daily email quota limits to 1000 emails/day
+⦁	Apps Script has a daily email quota limit of 1000 emails/day
 
-⦁	Google Sheets row limits …?
+⦁	A Google Sheet has a maximum of 10 million cells, a column limit of 18,278 columns (reaching column ZZZ), and no strict numerical limit on the number of rows itself, but it's indirectly governed by the total cell limit and the number of columns used
 
 ## Risks
 
